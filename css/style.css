@@ -1,3 +1,58 @@
+:root {
+  --text-font: "Proxima Nova", "Arial", sans-serif;
+  --text-color: #fff;
+  --body-bg: #162831;
+  --font-el-messiri: "El Messiri", "Arial", sans-serif; 
+}
+
+
+/* FONT-FACE */
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Light.woff2") format("woff2"),
+      url("../fonts/ProximaNova-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Bold.woff2") format("woff2"),
+      url("../fonts/ProximaNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Regular.woff2") format("woff2"),
+      url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "El Messiri";
+  src: url("../fonts/ElMessiri-Bold.woff2") format("woff2"),
+      url("../fonts/ElMessiri-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/ProximaNova-Semibold.woff2") format("woff2"),
+      url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* GLOBAL STYLES */
 html {
   box-sizing: border-box;
@@ -20,14 +75,15 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "", "Arial", sans-serif;
-  font-size: ;
-  font-weight: ;
-  line-height: 1.5;
-  color: #222;
-  padding: 0;
   margin: 0;
-  background-color: #fff;
+  padding: 0;
+  color: var(--white, #FFF);
+  font-family: var(--text-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18.9px;
+  background-color: var(--body-bg);
 }
 
 img {
@@ -48,9 +104,9 @@ img {
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1336px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
